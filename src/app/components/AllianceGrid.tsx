@@ -10,6 +10,7 @@ const COLORS = [
 
 const LOGOS: Record<string, string> = {
   "Exchange Art": "/logos/exchange-art.jpg",
+  "DRiP": "/logos/drip.jpg",
   "MagicBlock": "/logos/magicblock.jpg",
   "Realms": "/logos/realms.jpg",
   "Tapestry": "/logos/tapestry.jpg",

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, UnifrakturCook } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -7,19 +7,25 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
+const gothic = UnifrakturCook({
+  variable: "--font-gothic",
+  weight: "700",
+  subsets: ["latin"],
+});
+
 export const metadata: Metadata = {
-  title: "Graveyard Chronicles | Solana Graveyard Hackathon 2026",
+  title: "Graveyard Chronicles: The Last Stand | Solana Graveyard Hackathon 2026",
   description:
     "Crypto elites and the trenches left these for dead. But the best time to build is when everyone else has left.",
   openGraph: {
-    title: "Graveyard Chronicles",
+    title: "Graveyard Chronicles: The Last Stand",
     description:
-      "An interactive comic about resurrecting dead crypto categories on Solana.",
+      "An interactive comic about 12 Solana protocols banding together to fight the bear market.",
     images: ["/comics/cover-front.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Graveyard Chronicles",
+    title: "Graveyard Chronicles: The Last Stand",
     description:
       "Crypto elites and the trenches left these for dead. But the best time to build is when everyone else has left.",
     images: ["/comics/cover-front.png"],
@@ -33,7 +39,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} antialiased bg-black`}>
+      <body className={`${inter.variable} ${gothic.variable} antialiased bg-black`}>
         {children}
       </body>
     </html>

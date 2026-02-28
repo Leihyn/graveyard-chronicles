@@ -1,5 +1,5 @@
-import ComicReader from "./components/ComicReader";
+import LandingPage from "./components/LandingPage";
 
 export default function Home() {
-  return <ComicReader />;
+  return <LandingPage />;
 }

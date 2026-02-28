@@ -15,6 +15,10 @@ const LOGOS: Record<string, string> = {
   "Tapestry": "/logos/tapestry.jpg",
   "Audius": "/logos/audius.jpg",
   "Portals": "/logos/portals.jpg",
+  "KYD Labs": "/logos/kyd-labs.jpg",
+  "Torque": "/logos/torque.jpg",
+  "Sunrise": "/logos/sunrise.jpg",
+  "OrbitFlare": "/logos/orbitflare.jpg",
 };
 
 export default function AllianceGrid({ lang }: { lang: string }) {
